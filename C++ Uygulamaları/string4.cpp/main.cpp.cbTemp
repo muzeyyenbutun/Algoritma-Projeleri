@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string ad;
+    string soyad;
+    cout<<"Adinizi giriniz:";
+    getline(cin,ad);
+    cout<<"Soyadinizi giriniz:";
+    getline(cin,soyad);
+    ad+=(" "+soyad);
+    cout<<ad<<endl;
+    size_t bul=ad.find("aeuüoöýi");
+    cout<<bul;
+    return 0;
+
+}
